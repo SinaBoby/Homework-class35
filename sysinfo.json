@@ -1,39 +1,94 @@
 {
-  "node": "v14.15.1",
+  "node": "v16.13.1",
   "system": {
     "manufacturer": "Apple Inc.",
-    "model": "MacBookPro11,3"
+    "model": "MacBookAir7,2"
   },
   "cpu": {
     "manufacturer": "Intel®",
-    "brand": "Core™ i7-4960HQ",
-    "speed": 2.6
+    "brand": "Core™ i5-5250U",
+    "speed": 1.6
   },
-  "memory": "16 GB",
+  "memory": "8 GB",
   "osInfo": {
     "platform": "darwin",
     "distro": "macOS",
-    "release": "11.5.2"
+    "release": "12.0.1"
   },
   "vscodeInfo": {
-    "version": "1.62.1",
+    "version": "1.63.0",
     "extensions": [
+      "CoenraadS.bracket-pair-colorizer",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
       "esbenp.prettier-vscode",
+      "evgeniypeshkov.syntax-highlighter",
+      "formulahendry.terminal",
+      "hdg.live-html-previewer",
+      "hnw.vscode-auto-open-markdown-preview",
+      "matt-good.phabricator-links",
+      "ms-edgedevtools.vscode-edge-devtools",
+      "msjsdiag.debugger-for-chrome",
+      "ritwickdey.live-sass",
       "ritwickdey.LiveServer",
-      "shd101wyy.markdown-preview-enhanced"
+      "sketchbuch.vsc-quokka-statusbar",
+      "streetsidesoftware.code-spell-checker",
+      "techer.open-in-browser",
+      "vscodevim.vim",
+      "WallabyJs.quokka-vscode"
     ],
     "userSettings": {
-      "explorer.confirmDragAndDrop": false,
-      "explorer.confirmDelete": false,
-      "[javascript]": {
+      "editor.bracketPairColorization.enabled": true,
+      "editor.formatOnSave": true,
+      "editor.minimap.enabled": false,
+      "editor.renderIndentGuides": true,
+      "editor.tabSize": 2,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixALL.eslint": true
+      },
+      "liveSassCompile.settings.generateMap": false,
+      "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "./public/css"
+        },
+        {
+          "extensionName": ".min.css",
+          "format": "compressed",
+          "savePath": "/public/css"
+        }
+      ],
+      "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+      ],
+      "files.autoSave": "afterDelay",
+      "prettier.singleQuote": true,
+      "prettier.trailingComma": "all",
+      "terminal.integrated.defaultProfile.osx": "bash",
+      "liveServer.settings.donotVerifyTags": true,
+      "liveServer.settings.donotShowInfoMsg": true,
+      "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       },
-      "javascript.updateImportsOnFileMove.enabled": "never",
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2,
-      "[javascriptreact]": {
+      "editor.defaultFormatter": "sass",
+      "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-      }
+      },
+      "editor.detectIndentation": false,
+      "editor.linkedEditing": true,
+      "editor.wordWrap": "on",
+      "git.autofetch": true,
+      "vscode-edge-devtools.mirrorEdits": true,
+      "window.zoomLevel": -1,
+      "typescript.format.insertSpaceAfterTypeAssertion": true,
+      "terminal.integrated.sendKeybindingsToShell": true,
+      "quokka.automaticRestart": true,
+      "editor.accessibilitySupport": "off"
     }
   }
 }
