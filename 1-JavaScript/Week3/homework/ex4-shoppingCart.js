@@ -27,10 +27,10 @@ function addToShoppingCart(item) {
   if(shoppingCart.length > 3){
    shoppingCart.shift();
    shoppingCart.push(item)
-   return `You bought ${shoppingCart.toString()}!`
+   return `You bought ${shoppingCart.join(",")}!`
   }else{
     shoppingCart.push(item);
-    return `You bought ${shoppingCart.toString()}!`
+    return `You bought ${shoppingCart.join(",")}!`
   }
   
 }
