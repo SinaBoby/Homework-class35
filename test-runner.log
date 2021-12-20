@@ -73,3 +73,59 @@ ex4-shoppingCart.js
 2021-12-18 02:59:52 info: --------------------------------------------
 2021-12-18 02:59:52 warn: A unit test file was not provided.
 2021-12-18 02:59:58 info: All steps were completed successfully
+2021-12-19 09:44:56 info: --------------------------------------------
+2021-12-19 09:44:56 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-12-19 09:44:56 info: --------------------------------------------
+2021-12-19 09:44:56 warn: A unit test file was not provided.
+2021-12-19 09:45:03 info: All steps were completed successfully
+2021-12-19 09:56:31 info: --------------------------------------------
+2021-12-19 09:56:31 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-12-19 09:56:31 info: --------------------------------------------
+2021-12-19 09:56:31 warn: A unit test file was not provided.
+2021-12-19 09:56:42 info: All steps were completed successfully
+2021-12-19 10:10:55 info: ------------------------------------------------
+2021-12-19 10:10:55 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-12-19 10:10:55 info: ------------------------------------------------
+2021-12-19 10:10:55 warn: A unit test file was not provided.
+2021-12-19 10:11:04 info: All steps were completed successfully
+2021-12-20 01:45:39 info: -------------------------------------------
+2021-12-20 01:45:39 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-12-20 01:45:39 info: -------------------------------------------
+2021-12-20 01:45:49 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Dev in London, married to Suzi with 1 kids.
+  Received: You will be a Dev in London, 
+          married to Suzi with 1 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/hackyourfuture/Homework-class35/test-runner/CustomReporter.js"
+2021-12-20 01:45:54 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  44:13  warning  'number' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  45:15  warning  'partnerName' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  46:16  warning  'location' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  47:19  warning  'jobTitle' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+2021-12-20 01:45:57 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:67:6 - Unknown word (Suzi)
+ex3-tellFortune.js:67:20 - Unknown word (Melika)
+ex3-tellFortune.js:67:29 - Unknown word (Roxane)
+ex3-tellFortune.js:67:38 - Unknown word (Paria)
+
+2021-12-20 01:50:54 info: -------------------------------------------
+2021-12-20 01:50:54 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-12-20 01:50:54 info: -------------------------------------------
+2021-12-20 01:51:01 info: All unit tests passed.
+2021-12-20 01:51:08 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:59:6 - Unknown word (Suzi)
+ex3-tellFortune.js:59:20 - Unknown word (Melika)
+ex3-tellFortune.js:59:29 - Unknown word (Roxane)
+ex3-tellFortune.js:59:38 - Unknown word (Paria)
+
