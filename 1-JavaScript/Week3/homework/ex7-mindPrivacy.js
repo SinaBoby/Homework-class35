@@ -31,8 +31,11 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employeeRecords) {
- const employee
-const [ ,,,{name,occupation,gender},,,{name2,occupation2,gender2}] = employeeRecords
+ const nonPrivateData = [];
+for ( const {name , occupation , email} of employeeRecords) {
+ const item = {name , occupation , email};
+  nonPrivateData.push(item);
+}
   
 
 
