@@ -129,3 +129,26 @@ ex3-tellFortune.js:59:20 - Unknown word (Melika)
 ex3-tellFortune.js:59:29 - Unknown word (Roxane)
 ex3-tellFortune.js:59:38 - Unknown word (Paria)
 
+2021-12-20 02:51:06 info: -----------------------------------------
+2021-12-20 02:51:06 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-12-20 02:51:06 info: -----------------------------------------
+2021-12-20 02:51:06 warn: A unit test file was not provided.
+2021-12-20 02:51:12 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:3   warning  Avoid `for in` loops. Prefer `Object.keys()` instead    no-restricted-syntax
+  33:12  warning  'groceryItem' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2021-12-20 03:03:29 info: -----------------------------------------
+2021-12-20 03:03:29 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-12-20 03:03:29 info: -----------------------------------------
+2021-12-20 03:03:29 warn: A unit test file was not provided.
+2021-12-20 03:03:36 info: All steps were completed successfully
+2021-12-21 12:53:47 info: -----------------------------------------
+2021-12-21 12:53:47 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-12-21 12:53:47 info: -----------------------------------------
+2021-12-21 12:53:47 warn: A unit test file was not provided.
+2021-12-21 12:53:58 info: All steps were completed successfully
