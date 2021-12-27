@@ -35,7 +35,7 @@ function calculateTotalPrice(cartForParty) {
      if ( typeof arrayOfPrice[i] === 'number')
      total += arrayOfPrice[i];
 }
-  return total;
+  return `Total: €${total}`;
 }
 calculateTotalPrice(cartForParty)
 

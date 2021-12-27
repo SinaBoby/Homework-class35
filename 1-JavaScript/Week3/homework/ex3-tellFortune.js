@@ -34,11 +34,13 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly( fortuneArray) {
-  for (let i = 0 ; i < fortuneArray.length ; i++){
-    const selectedItem = fortuneArray[Math.floor(Math.random() * fortuneArray.length)] ;
-    return selectedItem ;
+  if (Array.isArray(fortuneArray) && fortuneArray.length > 0){
+    return fortuneArray[Math.floor(Math.random() * fortuneArray.length)] ;
+  }else {
+    return "Please pass an array with values as argument."
   }
-} 
+  }
+ 
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
  

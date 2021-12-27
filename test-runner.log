@@ -157,3 +157,44 @@ ex6-totalCost.js
 2021-12-21 05:23:23 info: -------------------------------------------
 2021-12-21 05:23:23 warn: A unit test file was not provided.
 2021-12-21 05:23:30 info: All steps were completed successfully
+2021-12-27 04:50:00 info: ----------------------------------------------
+2021-12-27 04:50:00 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-12-27 04:50:00 info: ----------------------------------------------
+2021-12-27 04:50:06 info: All unit tests passed.
+2021-12-27 04:50:12 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:30:19 - Unknown word (Sina)
+
+2021-12-27 04:53:13 info: ----------------------------------------
+2021-12-27 04:53:13 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-12-27 04:53:13 info: ----------------------------------------
+2021-12-27 04:53:21 info: All unit tests passed.
+2021-12-27 04:53:28 info: All steps were completed successfully
+2021-12-27 04:56:10 info: -------------------------------------------
+2021-12-27 04:56:10 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-12-27 04:56:10 info: -------------------------------------------
+2021-12-27 04:56:20 info: All unit tests passed.
+2021-12-27 04:56:32 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:58:6 - Unknown word (Suzi)
+ex3-tellFortune.js:58:20 - Unknown word (Melika)
+ex3-tellFortune.js:58:29 - Unknown word (Roxane)
+ex3-tellFortune.js:58:38 - Unknown word (Paria)
+
+2021-12-27 05:02:08 info: -------------------------------------------
+2021-12-27 05:02:08 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-12-27 05:02:08 info: -------------------------------------------
+2021-12-27 05:02:18 info: All unit tests passed.
+2021-12-27 05:02:30 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:58:6 - Unknown word (Suzi)
+ex3-tellFortune.js:58:20 - Unknown word (Melika)
+ex3-tellFortune.js:58:29 - Unknown word (Roxane)
+ex3-tellFortune.js:58:38 - Unknown word (Paria)
+
+2021-12-27 05:16:54 info: Disclaimer turned off
+2021-12-27 05:17:14 info: ------------------------------------------------
+2021-12-27 05:17:14 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-12-27 05:17:14 info: ------------------------------------------------
+2021-12-27 05:17:14 warn: A unit test file was not provided.
+2021-12-27 05:17:21 info: All steps were completed successfully
