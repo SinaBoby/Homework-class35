@@ -52,13 +52,7 @@ function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   // TODO replace this comment with your code
   const expected = `Total: €94.36`;
-  const cartForPartyMock = {
-    beers : 2.57 ,
-    chips : 20.66 ,
-    meat : 25.57 ,
-    softDrinks : 18.67 ,
-    ham : 26.89 
-  }
+  
   const actual = calculateTotalPrice({
     beers : 2.57 ,
     chips : 20.66 ,
