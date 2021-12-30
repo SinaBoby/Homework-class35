@@ -36,10 +36,9 @@ body, this code is now written once only in a separated function.
 function selectRandomly( fortuneArray) {
   if (Array.isArray(fortuneArray) && fortuneArray.length > 0){
     return fortuneArray[Math.floor(Math.random() * fortuneArray.length)] ;
-  }else {
-    return "Please pass an array with values as argument."
   }
   }
+  
  
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
