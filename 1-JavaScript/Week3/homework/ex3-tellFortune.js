@@ -37,6 +37,7 @@ function selectRandomly( fortuneArray) {
   if (Array.isArray(fortuneArray) && fortuneArray.length > 0){
     return fortuneArray[Math.floor(Math.random() * fortuneArray.length)] ;
   }
+  return "Please pass an array as argument."
   }
   
  
