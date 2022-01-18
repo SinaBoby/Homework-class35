@@ -291,3 +291,20 @@ Ran all test suites matching /ex4-whatsTheTime.test.js/i.
 2022-01-18 08:39:41 info: --------------------------------------------
 2022-01-18 08:39:59 info: All unit tests passed.
 2022-01-18 08:40:12 info: All steps were completed successfully
+2022-01-18 10:36:58 info: ---------------------------------------
+2022-01-18 10:36:58 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-18 10:36:58 info: ---------------------------------------
+2022-01-18 10:37:11 info: All unit tests passed.
+2022-01-18 10:37:14 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  44:8  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-01-18 10:41:25 info: ---------------------------------------
+2022-01-18 10:41:25 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-01-18 10:41:25 info: ---------------------------------------
+2022-01-18 10:41:38 info: All unit tests passed.
+2022-01-18 10:41:47 info: All steps were completed successfully
