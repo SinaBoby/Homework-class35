@@ -59,3 +59,146 @@ Ran all test suites matching /ex3-lemonAllergy.test.js/i.
 2021-12-29 06:55:22 info: --------------------------------------
 2021-12-29 06:55:29 info: All unit tests passed.
 2021-12-29 06:55:36 info: All steps were completed successfully
+2022-01-14 09:34:55 info: -------------------------------------------------
+2022-01-14 09:34:55 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-01-14 09:34:55 info: -------------------------------------------------
+2022-01-14 09:35:01 info: All unit tests passed.
+2022-01-14 09:35:07 info: All steps were completed successfully
+2022-01-18 02:13:57 info: ----------------------------------------
+2022-01-18 02:13:57 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-18 02:13:57 info: ----------------------------------------
+2022-01-18 02:14:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (8.854 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (292 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      10:128  error  <img> is missing required \"src\" attribute  element-required-attributes
+      10:128  error  <img> is missing required \"alt\" attribute  wcag/h37
+      10:220  error  <img> is missing required \"src\" attribute  element-required-attributes
+      10:220  error  <img> is missing required \"alt\" attribute  wcag/h37
+      10:312  error  <img> is missing required \"src\" attribute  element-required-attributes
+      10:312  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 6 problems (6 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        9.104 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-01-18 02:14:20 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  25:11  warning  'book' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  38:5   warning  Remove commented-out code                        hyf/no-commented-out-code
+  44:5   warning  Remove commented-out code                        hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2022-01-18 03:21:47 info: ----------------------------------------
+2022-01-18 03:21:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-18 03:21:47 info: ----------------------------------------
+2022-01-18 03:22:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (9.162 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (417 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      10:303  error  <img> is missing required \"alt\" attribute  wcag/h37
+      10:567  error  <img> is missing required \"alt\" attribute  wcag/h37
+      10:822  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        9.424 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-01-18 03:24:58 info: ----------------------------------------
+2022-01-18 03:24:58 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-18 03:24:58 info: ----------------------------------------
+2022-01-18 03:25:16 info: All unit tests passed.
+2022-01-18 03:25:29 info: All steps were completed successfully
