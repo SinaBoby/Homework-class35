@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Boby)

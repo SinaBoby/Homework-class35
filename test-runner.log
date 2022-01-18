@@ -202,3 +202,43 @@ Ran all test suites matching /ex1-bookList.test.js/i.
 2022-01-18 03:24:58 info: ----------------------------------------
 2022-01-18 03:25:16 info: All unit tests passed.
 2022-01-18 03:25:29 info: All steps were completed successfully
+2022-01-18 04:32:54 info: ---------------------------------------
+2022-01-18 04:32:54 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-18 04:32:54 info: ---------------------------------------
+2022-01-18 04:33:11 info: All unit tests passed.
+2022-01-18 04:33:18 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  18:10  warning  'li' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-01-18 04:33:25 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Boby)
+
+2022-01-18 04:34:25 info: ---------------------------------------
+2022-01-18 04:34:25 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-18 04:34:25 info: ---------------------------------------
+2022-01-18 04:34:41 info: All unit tests passed.
+2022-01-18 04:34:53 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Boby)
+
+2022-01-18 04:36:33 info: ---------------------------------------
+2022-01-18 04:36:33 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-18 04:36:33 info: ---------------------------------------
+2022-01-18 04:36:48 info: All unit tests passed.
+2022-01-18 04:36:59 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Boby)
+
+2022-01-18 04:39:11 info: ---------------------------------------
+2022-01-18 04:39:11 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-01-18 04:39:11 info: ---------------------------------------
+2022-01-18 04:39:25 info: All unit tests passed.
+2022-01-18 04:39:34 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:14:52 - Unknown word (Boby)
+
