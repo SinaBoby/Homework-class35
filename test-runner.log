@@ -308,3 +308,8 @@ ex5-catWalk/index.js
 2022-01-18 10:41:25 info: ---------------------------------------
 2022-01-18 10:41:38 info: All unit tests passed.
 2022-01-18 10:41:47 info: All steps were completed successfully
+2022-01-18 11:11:43 info: ------------------------------------------
+2022-01-18 11:11:43 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2022-01-18 11:11:43 info: ------------------------------------------
+2022-01-18 11:11:52 info: All unit tests passed.
+2022-01-18 11:12:01 info: All steps were completed successfully
