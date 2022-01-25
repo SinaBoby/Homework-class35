@@ -1,0 +1,28 @@
+
+
+
+.book-ul {
+  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: calc( 100% - 41px);
+}
+
+.book-item {
+  width : calc(25% - 51px);
+  padding: 10px;
+  min-width:350px;
+  margin: 15px;
+}
+.alreadyRead {
+  background-color: green;
+}
+
+.notYetRead {
+  background-color: red;
+}
+img {
+  width: 70%;
+      height: 85%;
+}
