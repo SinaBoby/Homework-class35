@@ -313,3 +313,13 @@ ex5-catWalk/index.js
 2022-01-18 11:11:43 info: ------------------------------------------
 2022-01-18 11:11:52 info: All unit tests passed.
 2022-01-18 11:12:01 info: All steps were completed successfully
+2022-01-25 09:04:31 info: ----------------------------------------
+2022-01-25 09:04:31 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-25 09:04:31 info: ----------------------------------------
+2022-01-25 09:04:46 info: All unit tests passed.
+2022-01-25 09:04:54 info: All steps were completed successfully
+2022-01-25 11:32:35 info: ----------------------------------------
+2022-01-25 11:32:35 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-01-25 11:32:35 info: ----------------------------------------
+2022-01-25 11:32:48 info: All unit tests passed.
+2022-01-25 11:32:54 info: All steps were completed successfully

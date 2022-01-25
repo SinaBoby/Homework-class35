@@ -55,4 +55,3 @@ console.log(document);
 let myInterval = setInterval(catWalk, 50);
 
 window.addEventListener('load', myInterval);
-document.get
