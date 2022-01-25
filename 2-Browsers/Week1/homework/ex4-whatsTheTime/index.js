@@ -10,7 +10,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 function addCurrentTime() {
  
   const timePlace = document.createElement('p');
-  document.body.appendChild(timePlace);
+  document.body.append(timePlace);
   function myTimer() {
     const today = new Date();
     const time =
