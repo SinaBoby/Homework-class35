@@ -17,5 +17,4 @@ document.getElementById('hometown').textContent = "Tehran";
 const listItem = document.querySelectorAll('li');
 for( const li of listItem){
   li.className = "list-item";
-  li.style.color = "red";
 }

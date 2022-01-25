@@ -8,18 +8,15 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
- 
   const timePlace = document.createElement('p');
   document.body.append(timePlace);
   function myTimer() {
     const today = new Date();
     const time =
       today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-    console.log(time);
     timePlace.textContent = time;
   }
   setInterval(myTimer, 1000);
 }
-
 
 window.addEventListener('load', addCurrentTime);
