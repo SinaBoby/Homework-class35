@@ -1,39 +1,132 @@
 {
-  "node": "v14.15.1",
+  "node": "v16.13.1",
   "system": {
     "manufacturer": "Apple Inc.",
-    "model": "MacBookPro11,3"
+    "model": "MacBookAir7,2"
   },
   "cpu": {
     "manufacturer": "Intel®",
-    "brand": "Core™ i7-4960HQ",
-    "speed": 2.6
+    "brand": "Core™ i5-5250U",
+    "speed": 1.6
   },
-  "memory": "16 GB",
+  "memory": "8 GB",
   "osInfo": {
     "platform": "darwin",
     "distro": "macOS",
-    "release": "11.5.2"
+    "release": "12.1"
   },
   "vscodeInfo": {
-    "version": "1.62.1",
+    "version": "1.64.0",
     "extensions": [
+      "ChakrounAnas.turbo-console-log",
+      "chrmarti.regex",
+      "CoenraadS.bracket-pair-colorizer",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.jshint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
       "esbenp.prettier-vscode",
+      "evgeniypeshkov.syntax-highlighter",
+      "firefox-devtools.vscode-firefox-debug",
+      "formulahendry.auto-rename-tag",
+      "formulahendry.terminal",
+      "GitHub.vscode-pull-request-github",
+      "hdg.live-html-previewer",
+      "hnw.vscode-auto-open-markdown-preview",
+      "kamikillerto.vscode-colorize",
+      "matt-good.phabricator-links",
+      "ms-azuretools.vscode-docker",
+      "ms-edgedevtools.vscode-edge-devtools",
+      "msjsdiag.debugger-for-chrome",
+      "PKief.material-icon-theme",
+      "ritwickdey.live-sass",
       "ritwickdey.LiveServer",
-      "shd101wyy.markdown-preview-enhanced"
+      "sketchbuch.vsc-quokka-statusbar",
+      "streetsidesoftware.code-spell-checker",
+      "techer.open-in-browser",
+      "vscodevim.vim",
+      "WallabyJs.quokka-vscode",
+      "zhuangtongfa.material-theme"
     ],
     "userSettings": {
-      "explorer.confirmDragAndDrop": false,
-      "explorer.confirmDelete": false,
-      "[javascript]": {
+      "editor.bracketPairColorization.enabled": true,
+      "editor.formatOnSave": true,
+      "editor.minimap.enabled": true,
+      "editor.renderIndentGuides": true,
+      "editor.fontFamily": "Fira Code",
+      "editor.fontLigatures": true,
+      "editor.fontWeight": "500",
+      "editor.tabSize": 2,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixALL.eslint": true,
+        "editor.showDeprecated": false,
+        "typescript.validate.enable": false
+      },
+      "liveSassCompile.settings.generateMap": false,
+      "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/public"
+        },
+        {
+          "extensionName": ".min.css",
+          "format": "compressed",
+          "savePath": "/public"
+        }
+      ],
+      "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+      ],
+      "files.autoSave": "afterDelay",
+      "prettier.singleQuote": true,
+      "prettier.trailingComma": "all",
+      "terminal.integrated.defaultProfile.osx": "zsh",
+      "liveServer.settings.donotVerifyTags": true,
+      "liveServer.settings.ChromeDebuggingAttachment": true,
+      "liveServer.settings.host": "localhost",
+      "liveServer.settings.donotShowInfoMsg": true,
+      "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       },
-      "javascript.updateImportsOnFileMove.enabled": "never",
-      "editor.formatOnSave": true,
-      "editor.tabSize": 2,
-      "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-      }
+      },
+      "editor.detectIndentation": false,
+      "editor.linkedEditing": true,
+      "editor.wordWrap": "on",
+      "git.autofetch": true,
+      "vscode-edge-devtools.mirrorEdits": true,
+      "window.zoomLevel": -1,
+      "typescript.format.insertSpaceAfterTypeAssertion": true,
+      "terminal.integrated.sendKeybindingsToShell": true,
+      "quokka.automaticRestart": true,
+      "editor.accessibilitySupport": "off",
+      "bracketPairColorizer.depreciation-notice": false,
+      "bracket-pair-colorizer-2.depreciation-notice": false,
+      "quokka.compactMessageOutput": true,
+      "liveServer.settings.CustomBrowser": "chrome",
+      "json.maxItemsComputed": 10000,
+      "cSpell.userWords": [
+        "Boby"
+      ],
+      "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "push:command"
+      ],
+      "workbench.iconTheme": "material-icon-theme",
+      "workbench.colorTheme": "One Dark Pro Darker",
+      "terminal.integrated.ignoreProcessNames": [
+        "oh-my-posh",
+        "bash",
+        "zsh"
+      ]
     }
   }
 }

@@ -27,9 +27,11 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
+ 
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promiseArray = dice.map(rollDie);
+  return Promise.all(promiseArray)
+ 
 }
 
 function main() {
@@ -43,3 +45,4 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+// About first question it's obviously about event loop and the time each function takes , as we have async code , they move to another thread and from there to callback queue , from here the event loop send them to call stack if it was empty.
