@@ -22,18 +22,71 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw `HTTP ERROR`;
+    } else {
+      return await response.json();
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+async function fetchAndPopulatePokemons(pokemons) {
+  const namesList = document.createElement('select');
+  document.body.insertAdjacentElement('afterbegin', namesList);
+  await pokemons.results.forEach((pokemon) => {
+    const name = document.createElement('option');
+    name.setAttribute('value', pokemon.name);
+    name.textContent = pokemon.name;
+    namesList.appendChild(name);
+  });
+
+  return namesList;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(namesList, pokemons) {
+  const selectedName = namesList.options[namesList.selectedIndex].text;
+  const results = pokemons.results;
+
+  results.forEach((pokemon) => {
+    if (pokemon.name === selectedName) {
+      fetch(pokemon.url)
+        .then((response) => {
+          if (!response.ok) {
+            throw 'HTTP ERROR';
+          } else {
+            return response.json();
+          }
+        })
+        .then((data) => {
+          const img = document.createElement('img');
+          img.src = data.sprites.front_default;
+          const container = document.getElementById('imageContainer');
+          while (container.firstChild) {
+            container.removeChild(container.firstChild);
+          }
+          container.appendChild(img);
+        })
+        .catch((error) => console.log(error));
+    }
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function main() {
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=151/`;
+  try {
+    const pokemons = await fetchData(url);
+    const namesList = await fetchAndPopulatePokemons(pokemons);
+    namesList.onchange = async () => {
+      await fetchImage(namesList, pokemons);
+    };
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function main() {
-  // TODO complete this function
-}
+window.addEventListener('load', main);
+//I'd like to See Your Notes about using async/await keyword. I'm not still totally sure which func should I call asynchronously and which one not . I know about promises but not yet quite comfortable with async/await even if my code works! specially using them with anonymous functions and arrow funcs.

@@ -3,3 +3,102 @@
 2022-02-13 09:00:53 info: ---------------------------------------------
 2022-02-13 09:01:08 info: All unit tests passed.
 2022-02-13 09:01:16 info: All steps were completed successfully
+2022-02-14 06:48:34 info: ------------------------------------------
+2022-02-14 06:48:34 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-02-14 06:48:34 info: ------------------------------------------
+2022-02-14 06:48:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (6.843 s)
+  pokemonApp
+    ✕ HTML should be syntactically valid (187 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:6  error  <form> element must have a submit button  wcag/h32·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        7.124 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-02-14 06:48:50 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  63:11  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-02-14 06:48:53 error: *** Spell Checker Report ***
+
+ex2-pokemonApp/index.js:84:62 - Unknown word (Stas)
+
+2022-02-14 07:29:45 info: ------------------------------------------
+2022-02-14 07:29:45 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-02-14 07:29:45 info: ------------------------------------------
+2022-02-14 07:29:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (6.889 s)
+  pokemonApp
+    ✕ HTML should be syntactically valid (187 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:6  error  <form> element must have a submit button  wcag/h32·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        7.151 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-02-14 07:34:50 info: ------------------------------------------
+2022-02-14 07:34:50 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-02-14 07:34:50 info: ------------------------------------------
+2022-02-14 07:35:02 info: All unit tests passed.
+2022-02-14 07:35:08 info: All steps were completed successfully
