@@ -624,3 +624,8 @@ ex5-pokerDiceChain.js
 2022-02-07 04:52:23 info: ----------------------------------------------
 2022-02-07 04:52:32 info: All unit tests passed.
 2022-02-07 04:52:40 info: All steps were completed successfully
+2022-02-17 02:38:55 info: ---------------------------------------
+2022-02-17 02:38:55 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-02-17 02:38:55 info: ---------------------------------------
+2022-02-17 02:39:04 info: All unit tests passed.
+2022-02-17 02:39:13 info: All steps were completed successfully
