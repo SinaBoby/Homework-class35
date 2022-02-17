@@ -34,10 +34,8 @@ function rollDice() {
       return rollDie(5)
     }).then(value => {
       results.push(value);
-      return new Promise((resolve, reject) => {
-        reject(new Error('Oops! something went wrong'))
-        resolve(results);
-      })
+      return (results);
+      
     });
 }
 
