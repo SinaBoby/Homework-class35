@@ -34,10 +34,10 @@ async function fetchData(url) {
     console.log(error);
   }
 }
-async function fetchAndPopulatePokemons(pokemons) {
+function fetchAndPopulatePokemons(pokemons) {
   const namesList = document.createElement('select');
   document.body.insertAdjacentElement('afterbegin', namesList);
-  await pokemons.results.forEach((pokemon) => {
+  pokemons.results.forEach((pokemon) => {
     const name = document.createElement('option');
     name.setAttribute('value', pokemon.name);
     name.textContent = pokemon.name;
@@ -62,13 +62,7 @@ async function fetchImage(namesList, pokemons) {
           }
         })
         .then((data) => {
-          const img = document.createElement('img');
-          img.src = data.sprites.front_default;
-          const container = document.getElementById('imageContainer');
-          while (container.firstChild) {
-            container.removeChild(container.firstChild);
-          }
-          container.appendChild(img);
+          loadImage(data);
         })
         .catch((error) => console.log(error));
     }
@@ -79,7 +73,7 @@ async function main() {
   const url = `https://pokeapi.co/api/v2/pokemon?limit=151/`;
   try {
     const pokemons = await fetchData(url);
-    const namesList = await fetchAndPopulatePokemons(pokemons);
+    const namesList = fetchAndPopulatePokemons(pokemons);
     namesList.onchange = async () => {
       await fetchImage(namesList, pokemons);
     };
@@ -90,3 +84,12 @@ async function main() {
 
 window.addEventListener('load', main);
 //I'd like to See Your Notes about using async/await keyword. I'm not still totally sure which func should I call asynchronously and which one not . I know about promises but not yet quite comfortable with async/await even if my code works! specially using them with anonymous functions and arrow funcs.
+function loadImage(data) {
+  const img = document.createElement('img');
+  img.src = data.sprites.front_default;
+  const container = document.getElementById('imageContainer');
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  container.appendChild(img);
+}
