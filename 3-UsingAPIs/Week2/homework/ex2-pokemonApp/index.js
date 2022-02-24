@@ -37,7 +37,7 @@ async function fetchData(url) {
 function fetchAndPopulatePokemons(pokemons) {
   const namesList = document.createElement('select');
   if (!document.querySelector('select')) {
-    document.body.appendChild(namesList);
+    document.getElementById('container').appendChild(namesList);
   }
   pokemons.results.forEach((pokemon) => {
     const pokemonNumber = pokemon.url.split('/')[6];
@@ -70,12 +70,15 @@ async function fetchImage(pokemonChar) {
 
 async function main() {
   try {
+    const container = document.createElement('div');
+    container.id = 'container';
+    document.body.insertAdjacentElement('afterbegin', container);
     const url = `https://pokeapi.co/api/v2/pokemon?limit=151/`;
     const getDataBtn = document.createElement('button');
     getDataBtn.setAttribute('type', 'button');
     getDataBtn.id = 'get-data';
     getDataBtn.textContent = 'Get Data';
-    document.body.appendChild(getDataBtn);
+    container.appendChild(getDataBtn);
     getDataBtn.addEventListener('click', async () => {
       const pokemons = await fetchData(url);
 
