@@ -36,47 +36,56 @@ async function fetchData(url) {
 }
 function fetchAndPopulatePokemons(pokemons) {
   const namesList = document.createElement('select');
-  document.body.insertAdjacentElement('afterbegin', namesList);
+  if (!document.querySelector('select')) {
+    document.body.appendChild(namesList);
+  }
   pokemons.results.forEach((pokemon) => {
+    const pokemonNumber = pokemon.url.split('/')[6];
     const name = document.createElement('option');
-    name.setAttribute('value', pokemon.name);
+    name.setAttribute('value', pokemonNumber);
     name.textContent = pokemon.name;
+
     namesList.appendChild(name);
   });
 
   return namesList;
 }
 
-async function fetchImage(namesList, pokemons) {
-  const selectedName = namesList.options[namesList.selectedIndex].text;
-  const results = pokemons.results;
+async function fetchImage(pokemonChar) {
+  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonChar}/`;
 
-  results.forEach((pokemon) => {
-    if (pokemon.name === selectedName) {
-      fetch(pokemon.url)
-        .then((response) => {
-          if (!response.ok) {
-            throw 'HTTP ERROR';
-          } else {
-            return response.json();
-          }
-        })
-        .then((data) => {
-          loadImage(data);
-        })
-        .catch((error) => console.log(error));
-    }
-  });
+  fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw 'HTTP ERROR';
+      } else {
+        return response.json();
+      }
+    })
+    .then((data) => {
+      loadImage(data);
+    })
+    .catch((error) => console.log(error));
 }
 
 async function main() {
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=151/`;
   try {
-    const pokemons = await fetchData(url);
-    const namesList = fetchAndPopulatePokemons(pokemons);
-    namesList.onchange = async () => {
-      await fetchImage(namesList, pokemons);
-    };
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=151/`;
+    const getDataBtn = document.createElement('button');
+    getDataBtn.setAttribute('type', 'button');
+    getDataBtn.id = 'get-data';
+    getDataBtn.textContent = 'Get Data';
+    document.body.appendChild(getDataBtn);
+    getDataBtn.addEventListener('click', async () => {
+      const pokemons = await fetchData(url);
+
+      const namesList = fetchAndPopulatePokemons(pokemons);
+      namesList.onchange = async (e) => {
+        console.log(e.target.value);
+        const pokemonChar = e.target.value;
+        await fetchImage(pokemonChar);
+      };
+    });
   } catch (error) {
     console.log(error);
   }
