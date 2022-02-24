@@ -13,10 +13,10 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 // ! Do not remove this line
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-async function rollDice() {
+function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  const value = await Promise.race(dice.map((num) => rollDie(num)));
-  return value;
+
+  return Promise.race(dice.map((num) => rollDie(num)));
 }
 
 // Refactor this function to use async/await and try/catch
